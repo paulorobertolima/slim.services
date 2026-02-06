@@ -29,10 +29,10 @@ jobs:
       # 3. Build do site
       - name: Build
         run: hugo --minify
-        
-      # 3.1 Criar CNAME para custom domain
+
+      # 3.1 Criar CNAME
       - name: Configure CNAME
-        run: echo "www.seudominio.com" > public/CNAME
+        run: echo "slim.services" > public/CNAME
 
       # 4. Deploy para gh-pages
       - name: Deploy
@@ -41,3 +41,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
+          keep_files: CNAME
