@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          submodules: true  # se usar themes como submodule
+          submodules: false  # se usar themes como submodule
 
       # 2. Instalar Hugo
       - name: Setup Hugo
