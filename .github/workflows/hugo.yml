@@ -3,32 +3,37 @@ name: Deploy Hugo
 on:
   push:
     branches:
-      - main
+      - main   # branch do código Hugo
 
 permissions:
-  contents: write
+  contents: write  # necessário para criar a branch gh-pages
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # runner Linux
 
     steps:
+      # 1. Fazer checkout do código
       - uses: actions/checkout@v4
         with:
-          submodules: true
           fetch-depth: 0
+          submodules: true  # se usar themes como submodule
 
+      # 2. Instalar Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: latest
-          extended: true
+          extended: false  # não precisa de extended se não usar PostCSS/SCSS
 
+      # 3. Build do site
       - name: Build
         run: hugo --minify
 
+      # 4. Deploy para gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          publish_branch: gh-pages
