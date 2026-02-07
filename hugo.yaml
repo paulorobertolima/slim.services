@@ -113,17 +113,17 @@ params:
     tiles:
     - title: Cloud Architecture
       icon: laptop-cloud
-      text: Design and implementation of scalable and secure architectures on AWS
+      text: Design and implementation of scalable architectures.
       url: /#services
       buttonText: Learn More
     - title: AWS Migration
       icon: doc-sync
-      text: Safe and efficient migration of your applications and data to the cloud
+      text: Safe and efficient migration of your applications and data.
       url: /#services
       buttonText: Learn More
     - title: Cost Optimization
       icon: plug-cloud
-      text: Reduce cloud spending with resource analysis and optimization
+      text: Reduce cloud spending with resource analysis.
       url: /#services
       buttonText: Learn More
   section2:
