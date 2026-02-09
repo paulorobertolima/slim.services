@@ -4,7 +4,7 @@
 	 viewBox="0 0 800 600" style="enable-background:new 0 0 800 600;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#5D5C74;stroke-width:4;stroke-miterlimit:10;}
-	.st1{fill:#4FC1EA;stroke:#5D5C74;stroke-width:3;stroke-miterlimit:10;}
+	.st1{fill:#b2b2b2;stroke:#5D5C74;stroke-width:3;stroke-miterlimit:10;}
 	.st2{fill:#5C5C74;}
 	.st3{fill:#344258;stroke:#5D5C74;stroke-width:4;stroke-miterlimit:10;}
 	.st4{fill:#FBD7CE;}
@@ -15,8 +15,8 @@
 	.st9{fill:#DFE1E2;}
 	.st10{fill:#EDEEEF;}
 	.st11{fill:none;stroke:#5D5C74;stroke-width:3;stroke-miterlimit:10;}
-	.st12{fill:none;stroke:#F39200;stroke-width:3;stroke-miterlimit:10;}
-	.st13{fill:none;stroke:#4FC1EB;stroke-width:3;stroke-miterlimit:10;}
+	.st12{fill:none;stroke:#9e62f5;stroke-width:3;stroke-miterlimit:10;}
+	.st13{fill:none;stroke:#b2b2b2;stroke-width:3;stroke-miterlimit:10;}
 </style>
 <g id="XMLID_2188_">
 	<line id="XMLID_7309_" class="st0" x1="50.3" y1="513.7" x2="759.5" y2="513.7"/>

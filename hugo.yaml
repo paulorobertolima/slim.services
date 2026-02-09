@@ -22,7 +22,8 @@ params:
   # preloader: false
   navbarlogo:
   # Logo (from static/images/logos/___)
-    image: logos/fresh.svg
+    #image: logos/fresh.svg
+    image: logos/slim2.svg
     link: /
     # Default width/height. Uncomment if you need to change
     # width: 112
