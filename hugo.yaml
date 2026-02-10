@@ -151,11 +151,11 @@ params:
     title: Our Clients Trust Us
     subtitle: Successful digital transformation with AWS
     clients:
-    - name: Carlos Silva
+    - name: Marina Costa
       quote: Slim Services completely transformed our cloud infrastructure. We reduced costs by 40% and significantly improved application performance.
       job: CTO - Technology Company
       img: 1
-    - name: Marina Costa
+    - name: Carlos Silva
       quote: Excellent consulting! The Slim Services team helped us migrate to AWS safely and without interruptions. Very professional and attentive.
       job: Operations Director
       img: 2
