@@ -9,7 +9,7 @@
    id="svg5"
    xml:space="preserve"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="final.svg"
+   sodipodi:docname="final-white.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -72,8 +72,10 @@
          style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:56.4444px;font-family:Inter;-inkscape-font-specification:'Inter Semi-Bold';fill:#333333;stroke:none;stroke-width:0.265;stroke-dasharray:none"
          x="91.414642"
          y="147.67276"><tspan
-   style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:56.4444px;font-family:Inter;-inkscape-font-specification:'Inter Medium';fill:#333333;stroke-width:0.265;stroke-dasharray:none"
-   id="tspan4000"
-   dy="0">slim</tspan><tspan
-   style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Inter;-inkscape-font-specification:'Inter Medium';fill:#6b59d4;fill-opacity:1"
-   id="tspan6997">.</tspan>services</tspan></text></g></svg>
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:56.4444px;font-family:Inter;-inkscape-font-specification:'Inter Medium';fill:#ffffff;stroke-width:0.265;stroke-dasharray:none"
+           id="tspan4000"
+           dy="0">slim</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Inter;-inkscape-font-specification:'Inter Medium';fill:#6b59d4;fill-opacity:1"
+           id="tspan6997">.</tspan><tspan
+           style="fill:#ffffff"
+           id="tspan1062">services</tspan></tspan></text></g></svg>
