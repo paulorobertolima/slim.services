@@ -23,11 +23,11 @@ params:
   navbarlogo:
   # Logo (from static/images/logos/___)
     #image: logos/fresh.svg
-    image: logos/slim2.svg
+    image: logos/slim.svg
     link: /
     # Default width/height. Uncomment if you need to change
-    # width: 112
-    # height: 28
+    width: 240
+    height: 28
   font:
     name: "Open Sans"
     sizes: [400,600]
@@ -172,7 +172,10 @@ params:
   footer:
     # Logo (from static/images/logos/___)
     #logo: fresh-white-alt.svg
-    logo: slim.svg
+    logo: slim-white-alt.svg
+    # Default width/height. Uncomment if you need to change
+    width: 200
+    height: 28
     # Social Media Title
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
@@ -191,7 +194,7 @@ params:
     bulmalogo: true
     quicklinks:
       column1:
-        title: "Services"
+        title: "Solutions"
         links:
         - text: Cloud Architecture
           link: /
