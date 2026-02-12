@@ -45,16 +45,18 @@ params:
     # Footer logos (from static/images/logos/clients/*.svg)
     # urls are optional
     clientlogos:
-    - logo: systek
+    - logo: aws
       url: https://aws.amazon.com
-    - logo: tribe
-      url: https://aws.amazon.com
-    - logo: kromo
-      url: https://aws.amazon.com
-    - logo: infinite
-      url: https://aws.amazon.com
-    - logo: gutwork
-      url: https://aws.amazon.com
+    - logo: terraform
+      url: https://www.terraform.io
+    - logo: kubernetes
+      url: https://kubernetes.io
+    - logo: docker
+      url: https://www.docker.com
+    - logo: github
+      url: https://github.com
+    - logo: gitlab
+      url: https://about.gitlab.com
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Services
