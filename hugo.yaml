@@ -5,6 +5,14 @@ title: Slim Services | AWS Cloud Consulting
 theme: 'hugo-fresh'
 
 googleAnalytics: G-MWCXMMRMT2
+
+outputs:
+  home:
+    - HTML
+    - Sitemap
+    # - JSON
+    # - RSS
+
 # Disables warnings
 disableKinds:
 - taxonomy
