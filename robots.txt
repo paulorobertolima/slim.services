@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /search/
+
+Sitemap: https://slim.services/sitemap.xml
