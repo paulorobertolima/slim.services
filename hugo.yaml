@@ -4,7 +4,7 @@ title: Slim Services | AWS Cloud Consulting
 
 theme: 'hugo-fresh'
 
-googleAnalytics: # Put in your tracking code without quotes like this: UA-XXX for universal tracking or G-XXX analytics v4 tracking
+googleAnalytics: G-6XPZ4S0RL9
 # Disables warnings
 disableKinds:
 - taxonomy
@@ -179,20 +179,20 @@ params:
     width: 200
     height: 28
     # Social Media Title
-    socialmediatitle: Follow Us
+    #socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
-    socialmedia:
-    - link: https://github.com/StefMa
-      # Icons are from Font Awesome
-      icon: github
-    - link: https://dribbble.com/#
-      icon: dribbble
-    - link: https://facebook.com/#
-      icon: facebook
-    - link: https://twitter.com/StefMa91
-      icon: twitter
-    - link: https://bitbucket.org/#
-      icon: bitbucket
+    #socialmedia:
+    #- link: https://github.com/slimservices
+    #  # Icons are from Font Awesome
+    #  icon: github
+    #- link: https://github.com/#
+    #  icon: instagram
+    #- link: https://facebook.com/#
+    #  icon: linkedin
+    #- link: https://twitter.com/#
+    #  icon: twitter
+    #- link: https://bitbucket.org/#
+    #  icon: bitbucket
     bulmalogo: true
     quicklinks:
       column1:
@@ -207,7 +207,7 @@ params:
         - text: Support & Monitoring
           link: /
         - text: Terms
-          link: /agb
+          link: /
       column2:
         title: "Resources"
         links:
