@@ -160,7 +160,7 @@ params:
     subtitle: Infraestrutura em nuvem adaptada às suas necessidades
     image: illustrations/mockups/app-mockup.png
     buttonText: Solicitar Proposta
-    buttonLink: "#contact"
+    buttonLink: "#section5"
   section4:
     title: Nossos Clientes Confiam em Nós
     subtitle: Transformação digital bem-sucedida com AWS
