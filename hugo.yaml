@@ -182,6 +182,7 @@ params:
     action: https://formspree.io/f/xojnlwbb
     method: POST
   footer:
+    #
     # Logo (from static/images/logos/___)
     #logo: fresh-white-alt.svg
     logo: slim-white-alt.svg
