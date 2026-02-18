@@ -130,12 +130,12 @@ params:
       url: /#services
       buttonText: Saiba Mais
     - title: Modernização de Aplicações
-      icon: arrows-rotate
+      icon: arrow-up-right-dots
       text: Transforme sistemas legados em cloud native com containers e serverless.
       url: /#services
       buttonText: Saiba Mais
     - title: Otimização de Custos
-      icon: bolt
+      icon: piggy-bank
       text: Análise de consumo, rightsizing e governança financeira na nuvem.
       url: /#services
       buttonText: Saiba Mais
@@ -158,9 +158,23 @@ params:
   section3:
     title: Soluções AWS Personalizadas
     subtitle: Infraestrutura em nuvem adaptada às suas necessidades
-    image: illustrations/mockups/app-mockup.png
     buttonText: Solicitar Proposta
     buttonLink: "#section5"
+    certifications:
+    - title: AWS Certified Solutions Architect - Professional
+      image: sa-pro.png
+    - title: AWS Certified DevOps Engineer - Professional
+      image: devops-pro.png
+    - title: AWS Certified Cloud Practitioner
+      image: cloud-prac.png
+    - title: AWS Certified AI Practitioner
+      image: ai-prac.png
+    - title: AWS Certified SysOps Administrator - Associate
+      image: sysops-ass.png
+    - title: AWS Certified Solutions Architect - Associate
+      image: sa-ass.png
+    - title: AWS Certified Developer - Associate
+      image: dev-ass.png
   section4:
     title: Nossos Clientes Confiam em Nós
     subtitle: Transformação digital bem-sucedida com AWS
