@@ -24,7 +24,7 @@ jobs:
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: latest
-          extended: false  # não precisa de extended se não usar PostCSS/SCSS
+          extended: true  # não precisa de extended se não usar PostCSS/SCSS
 
       # 3. Build do site
       - name: Build
