@@ -8141,16 +8141,29 @@ Classes to change the feel of bulma buttons
       color: #fff;
       background-color: #9967E4; }
 
+.button.mint-btn {
+  outline: none;
+  border-color: #99E5E0;
+  background-color: #99E5E0;
+  color: #fff;
+  transition: all 0.5s; }
+  .button.mint-btn:hover {
+    color: #fff; }
+  .button.mint-btn.raised:hover {
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2); }
+
 /*! _cards.scss v1.0.0 | Commercial License | built on top of bulma.io/Bulmax */
 /* ==========================================================================
 Cards and Card content styles
 ========================================================================== */
 .feature-card {
   width: 300px;
-  height: 320px;
+  height: 330px;
   background-color: #fff;
   border-radius: 3px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
   .feature-card .card-title h4 {
     font-family: 'Open Sans', sans-serif;
     padding-top: 25px;
@@ -8161,11 +8174,13 @@ Cards and Card content styles
     height: 120px;
     margin-top: 20px; }
   .feature-card .card-text {
-    padding: 0 40px; }
+    padding: 0 40px;
+    flex-grow: 1; }
     .feature-card .card-text p {
       color: #999; }
   .feature-card .card-action {
-    margin-top: 10px; }
+    margin-top: auto;
+    padding-bottom: 20px; }
   .feature-card.is-bordered {
     border: 1px solid #ededed; }
 
@@ -8199,6 +8214,30 @@ Cards and Card content styles
     color: #fff;
     border: 1px solid #fff;
     border-bottom-color: #fff !important; }
+
+.icon-primary {
+  color: #9967E4; }
+
+.feature-box {
+  padding: 30px 25px;
+  background-color: #fff;
+  border: 1px solid #ededed;
+  border-radius: 3px;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .feature-box .feature-box-icon {
+    margin-bottom: 20px; }
+  .feature-box .feature-box-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #444F60;
+    margin-bottom: 15px; }
+  .feature-box .feature-box-text {
+    color: #999;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex-grow: 1; }
 
 /* ==========================================================================
 Inputs styles

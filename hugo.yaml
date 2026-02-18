@@ -121,38 +121,40 @@ params:
 #      - text: Configurações do app
 #        url: /
   section1:
-    title: Serviços AWS Cloud
-    subtitle: Soluções completas para sua transformação digital
+    title: Reduza Custos e Ganhe Escala com a Nuvem
+    subtitle: Soluções completas para sua jornada cloud
     tiles:
-    - title: Arquitetura Cloud
-      icon: laptop-cloud
-      text: Design e implementação de arquiteturas escaláveis.
+    - title: Migração para Cloud
+      icon: cloud-arrow-up
+      text: Migração segura com arquitetura escalável e mínimo risco.
       url: /#services
       buttonText: Saiba Mais
-    - title: Migração AWS
-      icon: doc-sync
-      text: Migração segura e eficiente de suas aplicações e dados.
+    - title: Modernização de Aplicações
+      icon: arrows-rotate
+      text: Transforme sistemas legados em cloud native com containers e serverless.
       url: /#services
       buttonText: Saiba Mais
     - title: Otimização de Custos
-      icon: plug-cloud
-      text: Reduza gastos em nuvem com análise de recursos.
+      icon: bolt
+      text: Análise de consumo, rightsizing e governança financeira na nuvem.
       url: /#services
       buttonText: Saiba Mais
   section2:
-    title: Por que escolher Slim Services?
-    subtitle: Expertise AWS focada em resultados
+    title: Por que escolher a Slim Services?
+    subtitle: Extensão do seu time. Nuvem, operação e resultados.
     features:
-    - title: Certificação AWS Partner
-      text: Nosso time possui certificações avançadas AWS, garantindo melhores práticas e soluções de qualidade para sua infraestrutura em nuvem.
-      # Icon (from static/images/illustrations/icons/___.svg)
-      icon: laptop-globe
-    - title: Suporte Especializado
-      text: Monitoramento contínuo de suas operações em nuvem com alertas e suporte técnico especializado disponível sempre que precisar.
-      icon: doc-sync
-    - title: Otimização Contínua
-      text: Análise periódica de performance, segurança e custos para garantir que sua infraestrutura AWS esteja sempre otimizada e alinhada com seus objetivos.
-      icon: mobile-feed
+    - title: Estratégia + Execução
+      text: Expertise técnica profunda é nosso diferencial. Arquitetura robusta, automação inteligente e soluções que escalam sem comprometer performance.
+      icon: code
+    - title: Confiabilidade Garantida
+      text: Especialistas em infraestrutura resiliente que aguenta picos de tráfego. Disponibilidade e performance sem apagar incêndio.
+      icon: shield
+    - title: Financeiro Inteligente
+      text: Reduzimos custos sem sacrificar qualidade. Infraestrutura otimizada que entrega mais por menos.
+      icon: wallet
+    - title: Seu Sucesso é Nosso
+      text: Não somos fornecedores, somos parceiros. Crescemos com você, alinhando tecnologia aos seus objetivos reais.
+      icon: handshake
   section3:
     title: Soluções AWS Personalizadas
     subtitle: Infraestrutura em nuvem adaptada às suas necessidades

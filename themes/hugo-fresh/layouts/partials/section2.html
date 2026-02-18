@@ -4,30 +4,24 @@
 {{- $features := index $section2 "features" }}
 <section class="section is-medium" id="section2">
   <div class="container">
-    <div class="columns">
-      <div class="column is-centered-tablet-portrait">
-        <h1 class="title section-title">{{ $title }}</h1>
-        <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
-        <div class="divider"></div>
-      </div>
-      <div class="column is-7 mt-60">
-        {{- range $features }}
-        <article class="media icon-box">
-          <figure class="media-left">
-            <p class="image">
-              <img src="{{ printf "images/illustrations/icons/%s.svg" .icon | relURL }}">
-            </p>
-          </figure>
-          <div class="media-content mt-50">
-            <div class="content">
-              <p>
-                <span class="icon-box-title">{{ .title }}</span>
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">{{ $title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
 
-                <span class="icon-box-text">{{ .text | markdownify }}</span>
-              </p>
+    <div class="content-wrapper">
+      <div class="columns is-multiline">
+        {{- range $features }}
+        <div class="column is-half">
+          <div class="feature-box has-text-centered">
+            <div class="feature-box-icon">
+              <i class="fas fa-{{ .icon }} icon-primary" style="font-size: 2.5rem;"></i>
             </div>
+            <h4 class="feature-box-title">{{ .title }}</h4>
+            <p class="feature-box-text">{{ .text }}</p>
           </div>
-        </article>
+        </div>
         {{- end }}
       </div>
     </div>

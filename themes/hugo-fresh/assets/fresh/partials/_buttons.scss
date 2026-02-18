@@ -107,3 +107,18 @@ Classes to change the feel of bulma buttons
     }
 }
 
+
+
+.button.mint-btn {
+    outline: none;
+    border-color: $mint;
+    background-color: $mint;
+    color: $white;
+    transition: all 0.5s;
+    &:hover {
+        color: $white;
+    }
+    &.raised:hover {
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    }
+}
