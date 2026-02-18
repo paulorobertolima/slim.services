@@ -1,0 +1,178 @@
+{{- $section5   := .Site.Params.section5 }}
+{{- if eq $section5 true }}
+{{- $section5 = dict "_" "_" }}
+{{- end }}
+{{- $title      := index $section5 "title" | default "Drop us a line or two "}}
+{{- $subtitle   := index $section5 "subtitle" | default "We'd love to hear from you" }}
+{{- $action     := index $section5 "action" }}
+{{- $method     := index $section5 "method" }}
+{{- $buttonText := index $section5 "buttontext" | default "Send Message" }}
+<section class="section section-light-grey is-medium" id="section5">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 is-spaced">{{ $title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns">
+        <div class="column is-6 is-offset-3">
+          <div id="form-message" style="display: none; margin-bottom: 20px;"></div>
+          <form id="contact-form"{{ with $action }} action="{{ . }}"{{end}}{{ with $method }} method="{{ . }}"{{end}}>
+            <div class="columns is-multiline">
+              <div class="column is-6">
+                <input class="input is-medium" name="name" type="text" placeholder="Digite seu nome" required>
+              </div>
+              <div class="column is-6">
+                <input class="input is-medium" name="company" type="text" placeholder="Nome da Empresa" required>
+              </div>
+              <div class="column is-6">
+                <input class="input is-medium" name="email" type="email" placeholder="Digite seu email" required>
+              </div>
+              <div class="column is-6">
+                <div style="display: flex; gap: 10px; align-items: center;">
+                  <select id="country-select" class="input is-medium" style="flex: 0 0 80px; padding: 0; text-align: center;">
+                    <option value="55">🇧🇷 +55</option>
+                    <option value="1">🇺🇸 +1</option>
+                    <option value="44">🇬🇧 +44</option>
+                    <option value="33">🇫🇷 +33</option>
+                    <option value="49">🇩🇪 +49</option>
+                    <option value="39">🇮🇹 +39</option>
+                    <option value="34">🇪🇸 +34</option>
+                    <option value="31">🇳🇱 +31</option>
+                    <option value="41">🇨🇭 +41</option>
+                    <option value="43">🇦🇹 +43</option>
+                    <option value="61">🇦🇺 +61</option>
+                    <option value="81">🇯🇵 +81</option>
+                    <option value="86">🇨🇳 +86</option>
+                    <option value="91">🇮🇳 +91</option>
+                    <option value="52">🇲🇽 +52</option>
+                    <option value="54">🇦🇷 +54</option>
+                  </select>
+                  <input class="input is-medium" name="phone" type="tel" placeholder="11 99999999" style="flex: 1; text-align: center;" required>
+                </div>
+              </div>
+              <div class="column is-12">
+                <textarea class="textarea" name="message" rows="10" placeholder="Descreva seu projeto..." required></textarea>
+              </div>
+              <input type="text" name="website_url" style="display:none;">
+              <input type="hidden" name="formStartedAt" id="formStartedAt">
+              <div class="form-footer has-text-centered mt-10">
+                <button type="submit" class="button cta is-large primary-btn raised is-clear">{{ $buttonText }}</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+const phoneInput = document.querySelector('input[name="phone"]');
+const countrySelect = document.getElementById('country-select');
+
+document.getElementById('formStartedAt').value = Date.now();
+
+phoneInput.addEventListener('input', function(e) {
+  let value = e.target.value.replace(/\D/g, '');
+  
+  if (value.length > 13) {
+    value = value.slice(0, 13);
+  }
+  
+  if (value.length <= 2) {
+    e.target.value = value;
+  } else if (value.length <= 4) {
+    e.target.value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+  } else {
+    e.target.value = `(${value.slice(0, 2)}) ${value.slice(2)}`;
+  }
+});
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const form = this;
+  const honeypot = form.querySelector('input[name="website_url"]');
+  
+  if (honeypot.value !== '') {
+    return;
+  }
+  
+  const started = Number(document.getElementById('formStartedAt').value);
+  if (Date.now() - started < 3000) {
+    const messageDiv = document.getElementById('form-message');
+    messageDiv.innerHTML = '<div class="notification is-warning"><button class="delete"></button>Por favor, preencha o formulário com cuidado.</div>';
+    messageDiv.style.display = 'block';
+    
+    document.querySelector('.notification .delete').addEventListener('click', function() {
+      messageDiv.style.display = 'none';
+    });
+    return;
+  }
+  
+  const emailInput = form.querySelector('input[name="email"]');
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  if (!emailRegex.test(emailInput.value)) {
+    const messageDiv = document.getElementById('form-message');
+    messageDiv.innerHTML = '<div class="notification is-warning"><button class="delete"></button>Por favor, insira um email válido (ex: usuario@dominio.com)</div>';
+    messageDiv.style.display = 'block';
+    
+    document.querySelector('.notification .delete').addEventListener('click', function() {
+      messageDiv.style.display = 'none';
+    });
+    return;
+  }
+  
+  const ddi = countrySelect.value;
+  const phone = phoneInput.value.replace(/\D/g, '');
+  
+  const formData = new FormData(form);
+  formData.set('phone', `+${ddi} ${phoneInput.value}`);
+  
+  const messageDiv = document.getElementById('form-message');
+  const submitBtn = form.querySelector('button[type="submit"]');
+  
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Enviando...';
+  
+  fetch(form.action, {
+    method: 'POST',
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      messageDiv.innerHTML = '<div class="notification is-success"><button class="delete"></button>Mensagem enviada com sucesso! Em breve entraremos em contato.</div>';
+      messageDiv.style.display = 'block';
+      form.reset();
+      phoneInput.value = '';
+      countrySelect.value = '55';
+      document.getElementById('formStartedAt').value = Date.now();
+      submitBtn.disabled = false;
+      submitBtn.textContent = '{{ $buttonText }}';
+      
+      document.querySelector('.notification .delete').addEventListener('click', function() {
+        messageDiv.style.display = 'none';
+      });
+    } else {
+      throw new Error('Erro ao enviar');
+    }
+  })
+  .catch(error => {
+    messageDiv.innerHTML = '<div class="notification is-danger"><button class="delete"></button>Erro ao enviar a mensagem. Valide as informações.</div>';
+    messageDiv.style.display = 'block';
+    submitBtn.disabled = false;
+    submitBtn.textContent = '{{ $buttonText }}';
+    
+    document.querySelector('.notification .delete').addEventListener('click', function() {
+      messageDiv.style.display = 'none';
+    });
+  });
+});
+</script>
