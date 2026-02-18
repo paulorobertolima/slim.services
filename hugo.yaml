@@ -45,11 +45,11 @@ params:
     # Hero subtitle (optional)
     subtitle: Infraestrutura que escala. Custos otimizados. Time que entende seu negócio
     # Button text
-    buttontext: Quero evoluir minha cloud agora
+    buttontext: Começar agora
     # Show arrow icon on button
     buttonicon: true
     # Where the main hero button links to
-    buttonlink: "#contact"
+    buttonlink: "#section5"
     # Hero image (from static/images/___)
     image: illustrations/worker.svg
     # Footer logos (from static/images/logos/clients/*.svg)
@@ -179,8 +179,8 @@ params:
     title: Vamos Conversar
     subtitle: Entre em contato para uma consultoria gratuita sobre sua infraestrutura em nuvem
     buttonText: Enviar Mensagem
-    # action: https://formspree.io/f/<form_id>
-    # method: POST
+    action: https://formspree.io/f/xojnlwbb
+    method: POST
   footer:
     # Logo (from static/images/logos/___)
     #logo: fresh-white-alt.svg
