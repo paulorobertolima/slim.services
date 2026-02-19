@@ -53,7 +53,7 @@ params:
     # Hero image (from static/images/___)
     image: illustrations/worker.svg
     # Footer logos (from static/images/logos/clients/*.svg)
-    # urls are optional
+    ## urls are optional
     clientlogos:
     - logo: aws
       url: https://aws.amazon.com
